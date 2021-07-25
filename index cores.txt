@@ -1,0 +1,5 @@
+escuro  - #0A0D38
+rosa - #FF5F5E
+azul - #4554FF
+amarelo - #FFD22B
+verde - #38FF71

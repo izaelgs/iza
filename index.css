@@ -1,0 +1,22 @@
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 20px;
+    background-color: #FF5F5E;
+    color: #0A0D38;
+    text-shadow: 1px 1px #FFD22B;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 50% 50%;
+}
+.bloco{
+    border-radius: 20px;
+    background-color: #FFD22B;
+    text-shadow: 1px 1px #FF5F5E;
+}
