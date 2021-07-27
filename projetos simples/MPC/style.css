@@ -59,6 +59,18 @@ button{
     width: 50px; 
     border-top-left-radius: 0;  
     background-color: transparent; 
+    font-weight: bold;
+}
+
+button:hover{
+    height: 32px;;
+    width: 52px;
+    font-weight: bolder;    
+}
+
+button:active{
+    color: #615C9E;
+    border-color: #615C9E;
 }
 
 hr{
