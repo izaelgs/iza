@@ -28,7 +28,8 @@ body {
 }
 
 .titulo .btn:hover {
-    color: #f2e2058f;
-    border-color: #f2e2058f;
-    background-color: #f2f2f221;
+    color: #F2CB05;
+    border-color: #F2CB05;
+    box-shadow: rgba(242, 160, 7, 0.25) 0px 2px 10px;
+    background-color: #0D0D0D;
 }
