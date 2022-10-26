@@ -28,8 +28,16 @@ body {
 }
 
 .titulo .btn:hover {
-    color: #F2CB05;
+    color: #f2cb05a8;
     border-color: #F2CB05;
     box-shadow: rgba(242, 160, 7, 0.25) 0px 2px 10px;
-    background-color: #0D0D0D;
+}
+
+.navbar a {
+    color: rgb(242, 203, 5, 0.25) !important;
+}
+
+.navbar h1 {
+    font-size: 4vh;
+    color: #F2F2F2;
 }
