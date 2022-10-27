@@ -63,6 +63,10 @@ section {
     min-height: 50vh;
 }
 
+section img {
+    max-height: 10vh;
+}
+
 footer {
     background-color: black;
     min-height: 20vh;
