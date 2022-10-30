@@ -1,4 +1,4 @@
-# Iza <h1>
+# Iza
 Apresentação Visual de Mercado
 
 Ao decorrer da minha jornada de aprendizado este repositório é atualizado de acordo com meu nível de conhecimento frontend,
