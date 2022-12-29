@@ -44,14 +44,22 @@ body {
     background: linear-gradient(180deg, rgba(13, 13, 13, 0.95) 0%, rgba(13, 13, 13, 0.98) 85%, rgba(13, 13, 13,0) 100%);
 }
 
-    .navbar a {
+    .nav-link {
         color: rgb(242, 203, 5, 0.35) !important;
         transition: 0.4s;
     }
 
-    .navbar a:hover {
-        color: rgb(242, 203, 5, 0.55) !important;
+    .nav-link:hover, .nav-link .active {
+        color: rgba(242, 203, 5, 0.603) !important;
         text-shadow: rgba(242, 160, 7, 0.25) 0px 2px 10px;
+    }
+
+    .nav-link.active {
+        color: rgb(242, 203, 5, 0.55) !important;
+    }
+
+    .nav-link.disabled {
+        color: rgb(242, 203, 5, 0.25) !important;
     }
 
     .navbar h1, .navbar .bi {
