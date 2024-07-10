@@ -1,3 +1,1 @@
-# iza
-Ao decorrer da minha jornada de aprendizado este repositório é atualizado de acordo com meu nível de conhecimento frontend,
-novas habilidades adquiridas em geral e o surgimento de novos projetos disponíveis para visualização
+Ao decorrer da minha jornada acadêmica e profissional este repositório é atualizado de acordo com meu nível de conhecimento e experiência como desenvolvedor.
