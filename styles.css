@@ -635,8 +635,16 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .flex {
@@ -756,6 +764,10 @@ video {
   text-align: center;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -861,11 +873,20 @@ nav i {
   --tw-gradient-to: #431407 var(--tw-gradient-to-position);
   -webkit-background-clip: text;
           background-clip: text;
-  font-weight: 700;
+  font-weight: 800;
   color: transparent;
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+
+@media (min-width: 1024px) {
+  .title h1 {
+    font-weight: 700;
+  }
+}
+
+.title h1 {
   font-size: 10vh;
 }
 
@@ -1065,8 +1086,16 @@ footer i, footer svg {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:text-start {
+    text-align: start;
   }
 }
 

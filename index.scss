@@ -55,7 +55,7 @@ nav i {
 }
 
 .title h1 {
-  @apply bg-gradient-to-r from-orange-400 from-90% to-orange-950 bg-clip-text text-transparent font-bold transition-opacity duration-300;
+  @apply bg-gradient-to-r from-orange-400 from-90% to-orange-950 bg-clip-text text-transparent font-extrabold lg:font-bold transition-opacity duration-300;
 	font-size: 10vh;
 }
 
