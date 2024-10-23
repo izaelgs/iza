@@ -1,64 +1,62 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Izael GS - Programador FullStack</title>
+  <title>Izael G</title>
   <meta name="description"
-    content="Izael GS, Programador FullStack apaixonado por tecnologia, dedicado a criar experiências excepcionais para os usuários.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="index.css">
+    content="Izael GS, Programador FullStack dedicado a criar experiências excepcionais para os usuários.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 
-<body class="w-100 h-100">
-  <nav class="navbar fixed-top navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-baseline" href="https://github.com/izaelgs" target="_blank">
-        <i class="bi bi-github"></i>
+<body class="w-full h-full scrollbar-minimal">
+  <nav class="fixed p-4 w-full">
+    <div class="relative">
+      <a class="flex align-items-baseline w-1/3 hover:opacity-75 transition-opacity duration-300"
+        href="https://github.com/izaelgs" target="_blank">
+        <i class="devicon-github-original"></i>
         <h1>/Izaelgs</h1>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-secondary" aria-current="page" href="#experiencia">Experiência</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-secondary" aria-current="page" href="#habilidades">Habilidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-secondary" aria-current="page" href="#projetos">Projetos</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden lg:flex">
+        <!-- <li class="px-4">
+          <a class="font-semibold hover:text-orange-400 hover:text-primary relative transition-colors duration-300 after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left" aria-current="page" href="#experiencia">Experiência</a>
+        </li> -->
+        <li class="px-4">
+          <a class="font-semibold hover:text-orange-400 hover:text-primary relative transition-colors duration-300 after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+            aria-current="page" href="#">Início</a>
+        </li>
+        <li class="px-4">
+          <a class="font-semibold hover:text-orange-400 hover:text-primary relative transition-colors duration-300 after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+            aria-current="page" href="#habilidades">Habilidades</a>
+        </li>
+        <li class="px-4">
+          <a class="font-semibold hover:text-orange-400 hover:text-primary relative transition-colors duration-300 after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+            aria-current="page" href="#projetos">Projetos</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <main class="container align-items-center">
+  <main class="md:container mx-auto px-4">
     <!-- Perfil -->
-    <section class="row main">
-      <div class="col-md-8 titulo rounded-4 p-4">
+    <section class="main appear">
+      <div class="title rounded-4">
         <h1>IZAEL GS</h1>
-        <p class="fw-bold text-light" style="--bs-text-opacity: .8;">
-          Programador FullStack apaixonado por tecnologia, dedicado a criar experiências excepcionais para os usuários.
+        <p class="font-semibold mb-4">
+          Dedicado a criar experiências excepcionais para seus usuários.
         </p>
-        <a class="btn btn-lg rounded-5"
+        <a class="ring-2 ring-orange-900 hover:ring-orange-400 font-semibold hover:bg-orange-400 rounded-full px-4 py-2 transition-all duration-300"
           href="https://api.whatsapp.com/send/?phone=5527988126640&text&type=phone_number&app_absent=0"
           target="_blank">Entre em
           Contato!</a>
       </div>
-      <div class="col-md-4"></div>
     </section>
 
     <!-- Experiência -->
-    <section id="experiencia" class="d-flex align-items-center">
+    <!-- <section id="experiencia" class="flex align-items-center">
       <div class="row">
         <div class="col-md-6"></div>
         <div class="col-md-6 bg-dark bg-gradient p-4 rounded-4 bg-opacity-10" style="--bs-bg-opacity: 0;">
@@ -75,113 +73,114 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Habilidades -->
-    <section id="habilidades" class="text-center">
-      <h2 class="pt-4">Habilidades</h2>
-      <div class="row g-4 py-4 my-4">
+    <section id="habilidades" class="text-center appear">
+      <h2 class="title">Habilidades</h2>
+      <div class="grid grid-cols-3 gap-4 py-4 my-4">
         <!-- PHP -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="card-img-top"
             alt="Logo PHP" />
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">PHP</h5>
           </div>
         </div>
 
         <!-- Laravel -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png"
             alt="Logo Laravel">
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">Laravel</h5>
           </div>
         </div>
 
         <!-- Node.js -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png" alt="Logo Node.js">
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">Node.js</h5>
           </div>
         </div>
 
         <!-- Nestjs -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img src="https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png" alt="Logo Nestjs" />
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">Nestjs</h5>
           </div>
         </div>
 
         <!-- ReactJs -->
-        <div class="bg-transparent col-4">
-          <img src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png" alt="Logo ReactJs" />
-          <div class="card-body position-relative">
+        <div class="flex flex-col items-center justify-center">
+          <img src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+            alt="Logo ReactJs" />
+          <div class="card-body relative">
             <h5 class="card-title text-center">ReactJs</h5>
           </div>
         </div>
 
         <!-- React Native -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="Logo React Native" />
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">React Native</h5>
           </div>
         </div>
 
         <!-- Vue.js -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" class="card-img-top"
             alt="Logo Vue.js">
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">Vue.js</h5>
           </div>
         </div>
 
         <!-- Bootstrap -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
             alt="Logo Bootstrap">
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">Bootstrap</h5>
           </div>
         </div>
 
         <!-- Google Cloud Platform -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
             class="card-img-top" alt="Logo Google Cloud Platform">
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">Google Cloud Platform</h5>
           </div>
         </div>
 
         <!-- AWS -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img src="https://logodownload.org/wp-content/uploads/2017/11/amazon-web-services-logo.png"
             alt="Logo Amazon Web Services">
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">Amazon Web Services</h5>
           </div>
         </div>
 
         <!-- BitBucket -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"
             class="card-img-top" alt="Logo BitBucket">
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">BitBucket</h5>
           </div>
         </div>
 
         <!-- Tailwind CSS -->
-        <div class="bg-transparent col-4">
+        <div class="flex flex-col items-center justify-center">
           <img src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-1024x615-fdeis5r1.png"
             alt="Logo Tailwind CSS">
-          <div class="card-body position-relative">
+          <div class="card-body relative">
             <h5 class="card-title text-center">Tailwind CSS</h5>
           </div>
         </div>
@@ -190,149 +189,148 @@
 
     <!-- Projetos -->
     <section id="projetos" class="text-center">
-      <h2 class="py-4">Projetos</h2>
-      <div class="row my-4">
+      <h2 class="title appear mb-4">Projetos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-24">
         <!-- Socialmarket -->
-        <div class="col-md-4 card bg-dark">
-          <div class="card-header">
-            <h5 class="card-title">Socialmarket</h5>
-          </div>
-          <div class="card-body position-relative">
-            <p class="card-text">Plataforma de interação social entre sócios, clientes e demais interessados no processo
-              de venda e entrega de produtos, sendo
-              desenvolvida com nestjs, typeorm, mysql, vuejs, github actions e instâncias ec2 da aws.</p>
-            <div class="d-flex justify-content-between position-absolute bottom-0 mb-2 w-100 pe-4">
-              <a href="https://socialmarket.iza.dev.br/" class="nav-link active text-secondary"
-                target="_blank">Acessar</a>
-              <a href="https://github.com/izaelgs/socialmarket-front" target="_blank" rel="noopener noreferrer"><i
-                  class="bi bi-github"></i></a>
-            </div>
+        <div class="ring-1 ring-orange-400 p-4 rounded-lg flex flex-col appear">
+          <h5 class="title">Socialmarket</h5>
+          <p class="flex-grow">Plataforma de interação social entre sócios, clientes e demais interessados no
+            processo
+            de venda e entrega de produtos, sendo
+            desenvolvida com nestjs, typeorm, mysql, vuejs, github actions e instâncias ec2 da aws.</p>
+
+          <div class="flex justify-between bottom-0 mt-2 w-full">
+            <a href="https://socialmarket.iza.dev.br/" class="font-semibold hover:text-orange-400"
+              target="_blank">Acessar</a>
+            <a href="https://github.com/izaelgs/socialmarket-front" target="_blank"><i
+                class="devicon-github-original"></i></a>
           </div>
         </div>
+
         <!-- Web Chat -->
-        <div class="col-md-4 card bg-dark">
-          <div class="card-header">
-            <h5 class="card-title">Web Chat</h5>
-          </div>
-          <div class="card-body position-relative">
-            <p class="card-text">Plataforma de comunicação em tempo real desenvolvido com Laravel Jetstream, Laravel
-              WebSockets e tailwind Css</p>
-            <div class="d-flex justify-content-between position-absolute bottom-0 mb-2 w-100 pe-4">
-              <a href="" class="nav-link disabled" target="_blank" title="descontinuado" disabled>Descontinuado</a>
-              <a href="https://github.com/izaelgs/chat" target="_blank" rel="noopener noreferrer"><i
-                  class="bi bi-github"></i></a>
-            </div>
+        <div class="ring-1 ring-orange-400 p-4 rounded-lg flex flex-col appear">
+          <h5 class="title">Web Chat</h5>
+          <p class="flex-grow">Plataforma de comunicação em tempo real desenvolvido com Laravel Jetstream, Laravel
+            WebSockets e tailwind Css</p>
+
+          <div class="flex justify-between bottom-0 mt-2 w-full">
+            <a href="" class="font-semibold hover:text-orange-400 opacity-50" target="_blank" title="descontinuado"
+              disabled>Descontinuado</a>
+            <a href="https://github.com/izaelgs/chat" target="_blank"><i class="devicon-github-original"></i></a>
           </div>
         </div>
+
         <!-- Gerenciador de Objetivos -->
-        <div class="col-md-4 card bg-dark">
-          <div class="card-header">
-            <h5 class="card-title">Gerenciador de Objetivos</h5>
-          </div>
-          <div class="card-body position-relative">
-            <p class="card-text">Plataforma para gerenciamento de metas e objetivos e classificação por prioridade,
-              custo, retorno, prazo e urgência calculada de forma automática</p>
-            <div class="d-flex justify-content-between position-absolute bottom-0 mb-2 w-100 pe-4">
-              <a href="" class="nav-link disabled" target="_blank" title="descontinuado" disabled>Descontinuado</a>
-              <a href="https://github.com/izaelgs/targetManager" target="_blank" rel="noopener noreferrer"><i
-                  class="bi bi-github"></i></a>
-            </div>
+        <div class="ring-1 ring-orange-400 p-4 rounded-lg flex flex-col appear">
+          <h5 class="title">Gerenciador de Objetivos</h5>
+          <p class="flex-grow">Plataforma para gerenciamento de metas e objetivos e classificação por prioridade,
+            custo, retorno, prazo e urgência calculada de forma automática</p>
+
+          <div class="flex justify-between bottom-0 mt-2 w-full">
+            <a href="" class="font-semibold hover:text-orange-400 opacity-50" target="_blank" title="descontinuado"
+              disabled>Descontinuado</a>
+            <a href="https://github.com/izaelgs/targetManager" target="_blank"><i
+                class="devicon-github-original"></i></a>
           </div>
         </div>
+
         <!-- Mini Loja -->
-        <div class="col-md-4 card bg-dark">
-          <div class="card-header">
-            <h5 class="card-title">Mini Loja</h5>
-          </div>
-          <div class="card-body position-relative">
-            <p class="card-text">Material de estudo sobre princípios básicos para construção de um ecommerce utilizando
-              laravel, vuejs e a api do pagseguro</p>
-            <div class="d-flex justify-content-between position-absolute bottom-0 mb-2 w-100 pe-4">
-              <a href="#" target="_blank" class="nav-link disabled" title="descontinuado">Descontinuado</a>
-              <a href="https://github.com/izaelgs/miniStore" target="_blank" rel="noopener noreferrer"><i
-                  class="bi bi-github"></i></a>
-            </div>
+        <div class="ring-1 ring-orange-400 p-4 rounded-lg flex flex-col appear">
+          <h5 class="title">Mini Loja</h5>
+          <p class="flex-grow">Material de estudo sobre princípios básicos para construção de um ecommerce
+            utilizando
+            laravel, vuejs e a api do pagseguro</p>
+
+          <div class="flex justify-between bottom-0 mt-2 w-full">
+            <a href="#" class="font-semibold hover:text-orange-400 opacity-50" target="_blank"
+              title="descontinuado">Descontinuado</a>
+            <a href="https://github.com/izaelgs/miniStore" target="_blank"><i class="devicon-github-original"></i></a>
           </div>
         </div>
-        <!-- Portfólio -->
-        <div class="col-md-4 card bg-dark">
-          <div class="card-header">
-            <h5 class="card-title">Portfólio</h5>
-          </div>
-          <div class="card-body position-relative">
-            <p class="card-text">Breve resumo profissional feito com Html, Css e Bootstrap</p>
-            <div class="d-flex justify-content-between position-absolute bottom-0 mb-2 w-100 pe-4">
-              <a href="#" target="_blank" class="nav-link active text-secondary opacity-0"></a>
-              <a href="https://github.com/izaelgs/iza" target="_blank"><i class="bi bi-github"></i></a>
-            </div>
-          </div>
-        </div>
+
         <!-- Unitech -->
-        <div class="col-md-4 card bg-dark">
-          <div class="card-header">
-            <h5 class="card-title">Unitech</h5>
+        <div class="ring-1 ring-orange-400 p-4 rounded-lg flex flex-col appear">
+          <h5 class="title">Unitech</h5>
+          <p class="flex-grow">Website Institucional Unitech feito em parceria com o Centro Universitário
+            Salesiano
+          </p>
+
+          <div class="flex justify-between bottom-0 mt-2 w-full">
+            <a href="http://home.unitechlab.com.br/" class="font-semibold hover:text-orange-400"
+              target="_blank">Acessar</a>
+            <a href="https://github.com/Fabrica-de-Software-Unisales/unitech" target="_blank"><i
+                class="devicon-github-original"></i></a>
           </div>
-          <div class="card-body position-relative">
-            <p class="card-text">Website Institucional Unitech feito em parceria com o Centro Universitário Salesiano
-            </p>
-            <div class="d-flex justify-content-between position-absolute bottom-0 mb-2 w-100 pe-4">
-              <a href="http://home.unitechlab.com.br/" class="nav-link active text-secondary"
-                target="_blank">Acessar</a>
-              <a href="https://github.com/Fabrica-de-Software-Unisales/unitech" target="_blank"><i
-                  class="bi bi-github"></i></a>
-            </div>
+        </div>
+
+        <!-- Portfólio -->
+        <div class="ring-1 ring-orange-400 p-4 rounded-lg flex flex-col appear">
+          <h5 class="title">Portfólio</h5>
+          <p class="flex-grow">Breve resumo profissional feito com Html, Css e Bootstrap</p>
+
+          <div class="flex justify-between bottom-0 mt-2 w-full">
+            <a href="#" class="font-semibold hover:text-orange-400 opacity-0" target="_blank"></a>
+            <a href="https://github.com/izaelgs/iza" target="_blank"><i class="devicon-github-original"></i></a>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer>
-    <div class="container py-4">
-      <div class="row">
-        <ul class="col-12 col-md-4 text-center">
-          <li>
-            <p class="text-sm-start my-0">Serra - ES</p>
-          </li>
-          <li>
-            <p class="text-sm-start my-0">2024</p>
-          </li>
-        </ul>
-        <ul class="col-12 col-md-4 text-center py-2">
-          <li>
-            <p class="text-sm-start my-0"><i class="bi bi-envelope mx-2"></i>izael.dev@gmail.com</p>
-          </li>
-          <li>
-            <p class="text-sm-start my-0"><i class="bi bi-telephone mx-2"></i>(27) 98812-6640</p>
-          </li>
-        </ul>
-        <div class="col row">
-          <div class="col">
-            <a href="https://github.com/izaelgs" target="_blank" class="d-flex"><i class="bi bi-github mx-2"></i>
-              GitHub</a>
-          </div>
-          <div class="col">
-            <a href="https://www.instagram.com/izael_hs/" target="_blank" class="d-flex"><i
-                class="bi bi-instagram mx-2"></i>Instagram</a>
-          </div>
-          <div class="col">
-            <a href="https://br.linkedin.com/in/izaelgs" target="_blank" class="d-flex"><i
-                class="bi bi-linkedin mx-2"></i>LinkedIn</a>
-          </div>
-          <div class="col">
-            <a href="https://twitter.com/Izael65" target="_blank" class="d-flex"><i
-                class="bi bi-twitter mx-2"></i>Twitter</a>
-          </div>
-          <div class="col">
-            <a href="https://api.whatsapp.com/send/?phone=27988126640&text&type=phone_number&app_absent=0"
-              target="_blank" class="d-flex"><i class="bi bi-whatsapp mx-2"></i>WhatsApp</a>
-          </div>
+
+  <footer class="md:container mx-auto px-4">
+    <div class="grid grid-cols-2">
+      <div class="grid grid-cols-2">
+        <div class="flex-1">
+          <a href="https://github.com/izaelgs" target="_blank"
+            class="flex hover:opacity-75 transition-opacity duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+            <i class="devicon-github-original"></i>GitHub</a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/izael_hs/" target="_blank"
+            class="flex hover:opacity-75 transition-opacity duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+            Instagram</a>
+        </div>
+        <div class="col">
+          <a href="https://br.linkedin.com/in/izaelgs" target="_blank"
+            class="flex hover:opacity-75 transition-opacity duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"><i
+              class="devicon-linkedin-plain"></i>LinkedIn</a>
+        </div>
+        <div class="col">
+          <a href="https://twitter.com/Izael65" target="_blank"
+            class="flex hover:opacity-75 transition-opacity duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"><i
+              class="devicon-twitter-plain"></i>Twitter</a>
+        </div>
+        <div class="col">
+          <a href="https://api.whatsapp.com/send/?phone=27988126640&text&type=phone_number&app_absent=0" target="_blank"
+            class="flex hover:opacity-75 transition-opacity duration-300 relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+              viewBox="0 0 16 16">
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+            </svg>WhatsApp</a>
         </div>
       </div>
+      <ul>
+        <li>
+          <p class="text-sm-start my-0">Serra - ES</p>
+        </li>
+        <li>
+          <p class="text-sm-start my-0">2024</p>
+        </li>
+        <li>
+          <p class="text-sm-start my-0">izael.dev@gmail.com</p>
+        </li>
+        <li>
+          <p class="text-sm-start my-0">(27) 98812-6640</p>
+        </li>
+      </ul>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pp1z/B3a76/gj5l27XKtsIWVKB6I9ER+T62G6eI2y5S/DOHJX3L8RfGcbK8GTPLm"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
