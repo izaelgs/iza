@@ -73,7 +73,7 @@
             aria-current="page" href="#" aria-label="Go to the initial section">Home</a>
         </li>
         <li class="px-4">
-          <a class="font-semibold hover:text-orange-400 hover:text-primary relative transition-colors duration-300 after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+          <a class="font-semibold hover:text-orange-400 relative transition-colors duration-300 after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-current after:left-0 after:bottom-0 after:transform after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
             aria-current="page" href="#skills" aria-label="Go to the skills section">Skills</a>
         </li>
         <li class="px-4">
@@ -103,250 +103,229 @@
       <h2 class="title appear">Skills</h2>
       <p class="description appear">A brief overview of my technical skills and expertise in various technologies.</p>
 
-      <!-- Frontend Skills -->
-      <h3 class="title appear">Frontend</h3>
-      <div class="grid grid-cols-3 gap-4 py-4 my-4">
-        <!-- React -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png" alt="React Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">React</h5>
-          </div>
-        </div>
+      <!-- Tab Navigation -->
+      <div class="tabs appear">
+        <button class="tab-button active" onclick="openTab(event, 'frontend')">Frontend</button>
+        <button class="tab-button" onclick="openTab(event, 'backend')">Backend</button>
+        <button class="tab-button" onclick="openTab(event, 'devops')">DevOps</button>
+        <button class="tab-button" onclick="openTab(event, 'testing')">Testing</button>
+        <button class="tab-button" onclick="openTab(event, 'mobile')">Mobile</button>
+      </div>
 
-        <!-- Vue.js -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="Vue Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Vue</h5>
+      <!-- Tab Content -->
+      <div id="frontend" class="tab-content active">
+        <div class="grid grid-cols-3 gap-4 py-4 my-4">
+          <!-- React -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+              alt="React Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">React</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- jQuery -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" alt="jQuery Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">jQuery</h5>
+          <!-- Vue.js -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+              alt="Vue Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Vue</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Electron -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg" alt="Electron Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Electron</h5>
+          <!-- jQuery -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg"
+              alt="jQuery Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">jQuery</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Next.js -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Next.js</h5>
+          <!-- Electron -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg"
+              alt="Electron Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Electron</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Vite -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="Vite Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Vite</h5>
+          <!-- Next.js -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+              alt="Next.js Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Next.js</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Bootstrap -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="Bootstrap Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Bootstrap</h5>
+          <!-- Vite -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+              alt="Vite Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Vite</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Tailwind -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-1024x615-fdeis5r1.png" alt="Tailwind Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Tailwind</h5>
+          <!-- Bootstrap -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
+              alt="Bootstrap Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Bootstrap</h5>
+            </div>
+          </div>
+          <!-- Tailwind -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://static-00.iconduck.com/assets.00/tailwind-css-icon-1024x615-fdeis5r1.png"
+              alt="Tailwind Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Tailwind</h5>
+            </div>
+          </div>
+          <!-- Nuxt.js -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuxtjs/nuxtjs-original.svg"
+              alt="Nuxt.js Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Nuxt.js</h5>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Backend Skills -->
-      <h3 class="title appear">Backend</h3>
-      <div class="grid grid-cols-3 gap-4 py-4 my-4">
-        <!-- Node.js -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Node.js</h5>
+      <div id="backend" class="tab-content">
+        <div class="grid grid-cols-3 gap-4 py-4 my-4">
+          <!-- Node.js -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+              alt="Node.js Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Node.js</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Nest.js -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png" alt="Nest.js Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Nest.js</h5>
+          <!-- Nest.js -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png" alt="Nest.js Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Nest.js</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Laravel -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png" alt="Laravel Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Laravel</h5>
+          <!-- Laravel -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png"
+              alt="Laravel Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Laravel</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- PHP -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">PHP</h5>
+          <!-- PHP -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">PHP</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Java -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Java</h5>
+          <!-- Java -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+              alt="Java Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Java</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Spring -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Spring</h5>
-          </div>
-        </div>
-      </div>
-
-      <!-- Database Skills -->
-      <h3 class="title appear">Database</h3>
-      <div class="grid grid-cols-3 gap-4 py-4 my-4">
-        <!-- MongoDB -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">MongoDB</h5>
-          </div>
-        </div>
-
-        <!-- Prisma -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" alt="Prisma Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Prisma</h5>
-          </div>
-        </div>
-
-        <!-- MySQL -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">MySQL</h5>
-          </div>
-        </div>
-
-        <!-- Firebase -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" alt="Firebase Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Firebase</h5>
-          </div>
-        </div>
-
-        <!-- AWS -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">AWS</h5>
+          <!-- Spring -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+              alt="Spring Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Spring</h5>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- DevOps Skills -->
-      <h3 class="title appear">DevOps</h3>
-      <div class="grid grid-cols-3 gap-4 py-4 my-4">
-        <!-- AWS -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">AWS</h5>
+      <div id="devops" class="tab-content">
+        <div class="grid grid-cols-3 gap-4 py-4 my-4">
+          <!-- AWS -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+              alt="AWS Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">AWS</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- DigitalOcean -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg" alt="DigitalOcean Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">DigitalOcean</h5>
+          <!-- DigitalOcean -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg"
+              alt="DigitalOcean Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">DigitalOcean</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Docker -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" alt="Docker Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Docker</h5>
+          <!-- Docker -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg"
+              alt="Docker Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Docker</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- GitHub Actions -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="GitHub Actions Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">GitHub Actions</h5>
+          <!-- GitHub Actions -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+              alt="GitHub Actions Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">GitHub Actions</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Google Cloud -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Google Cloud</h5>
+          <!-- Google Cloud -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+              alt="Google Cloud Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Google Cloud</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Nginx -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" alt="Nginx Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Nginx</h5>
+          <!-- Nginx -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg"
+              alt="Nginx Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Nginx</h5>
+            </div>
           </div>
-        </div>
-
-        <!-- Ubuntu -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg" alt="Ubuntu Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Ubuntu</h5>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testing Skills -->
-      <h3 class="title appear">Testing</h3>
-      <div class="grid grid-cols-3 gap-4 py-4 my-4">
-        <!-- Jest -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" alt="Jest Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">Jest</h5>
+          <!-- Ubuntu -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg"
+              alt="Ubuntu Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Ubuntu</h5>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Mobile Skills -->
-      <h3 class="title appear">Mobile</h3>
-      <div class="grid grid-cols-3 gap-4 py-4 my-4">
-        <!-- React Native -->
-        <div class="flex flex-col items-center justify-center appear">
-          <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React Native Logo" />
-          <div class="card-body relative">
-            <h5 class="card-title text-center">React Native</h5>
+      <div id="testing" class="tab-content">
+        <div class="grid grid-cols-3 gap-4 py-4 my-4">
+          <!-- Jest -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" alt="Jest Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">Jest</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile" class="tab-content">
+        <div class="grid grid-cols-3 gap-4 py-4 my-4">
+          <!-- React Native -->
+          <div class="flex flex-col items-center justify-center appear">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+              alt="React Native Logo" />
+            <div class="card-body relative">
+              <h5 class="card-title text-center">React Native</h5>
+            </div>
           </div>
         </div>
       </div>
@@ -463,7 +442,8 @@
           <p class="text-sm-start my-0">2024</p>
         </li>
         <li>
-          <a href="mailto:izael.dev@gmail.com" class="my-0 text-white flex justify-center md:block">izael.dev@gmail.com</a>
+          <a href="mailto:izael.dev@gmail.com"
+            class="my-0 text-white flex justify-center md:block">izael.dev@gmail.com</a>
         </li>
         <li>
           <a href="tel:+5527997907352" class="my-0 text-white flex justify-center md:block">+55 (27) 99790-7352</a>
@@ -525,6 +505,31 @@
           navToggle.setAttribute('aria-expanded', 'false');
         }
       });
+    });
+  </script>
+  <script>
+    function openTab(evt, tabName) {
+      // Hide all tab content
+      var i, tabcontent, tabbuttons;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Remove the active class from all tab buttons
+      tabbuttons = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tabbuttons.length; i++) {
+        tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+      }
+
+      // Show the current tab and add an "active" class to the button that opened the tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Set default tab to open
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector(".tab-button.active").click();
     });
   </script>
 </body>
